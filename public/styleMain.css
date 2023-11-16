@@ -6,77 +6,98 @@
     font-size: 16px
 }
 
-/* ---------------- HEADER ----------------- */
-
-header {
-    background-color: #57812C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+main {
+    margin-bottom: 5rem;
 }
 
-header img {
-    width: 150%;
-    height: auto;
-}
-
-.headerTop {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+section {
+    margin-bottom: 1rem;
     margin-top: 2rem;
 }
 
-.titulo h1{
-    margin-bottom: 0;
-    font-size: x-large;
+h2 {
     font-weight: bold;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.nav-links li{
-    display: flex;
-    margin: 1rem;
-    margin-bottom: 0px;
-    list-style: none;
-    padding: 0 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-links a {
-    color: white;
     text-align: center;
-    width: 130px;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-.nav-links li:hover {
-    background-color: #405f20;
-    border-radius: 10px;
+.alumno {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.logout {
-    border: 1px solid rgb(119, 0, 0);
-    transition: all 0.3s ease 0s;
+.alumno h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    flex: 100%;
 }
 
-.logout:hover {
-    transform: scale(1.1)
+.cardAlumno {
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 5px 15px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    margin: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
-/* -------------------------- */
+.foto {
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+}
 
+.foto img {
+    height: 224px;
+    width: auto;
+    border-radius: 360px;
+}
+
+.infoAlumno {
+    flex: 75%;
+}
+
+.infoAlumno p {
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+
+.infoIMSS {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 1rem;
+    width: 30%;
+    height: 168px;
+}
+
+.infoIMSS p {
+    margin: 1rem;
+}
+
+.tabla {
+    margin: 1rem;
+    width: 100%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th{
+    color: white;
+    background-color: #57812C;
+    
+    
+}
+
+.tabla tr {
+    border: 1px solid #57812C;
+}
