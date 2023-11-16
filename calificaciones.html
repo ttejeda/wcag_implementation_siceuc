@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Calificaiones de esta</title>
+    <link rel="stylesheet" href="./public/styleHeader.css">
+    <link rel="stylesheet" href="./public/styleCalf.css">
+    <title>Calificaiones del semestre actual</title>
 </head>
 
 <body>
-    <main class="container">
+    <header class="container-fluid">
+        <div class="headerTop">
+            <div class="logo">
+                <img src="./public/img/logo.png" alt="Universidad de Colima">
+            </div>
+            <div class="titulo">
+                <h1 class="text-white">Calificaiones del semestre actual</h1>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="./calificaciones.html">Evaluaciones</a></li>
+                <li><a href="./analisis.html">Análisis</a></li>
+                <li><a href="#">Servicio Social Universitario</a></li>
+                <li><a href="#">Servicio Social Constitucional</a></li>
+                <li><a href="#">Culturales y Deportivas</a></li>
+                <li class="bg-danger rounded logout"><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container mt-4">
         <section class="d-flex justify-content-center mb-2">
             <div class="mr-2 mt-2">
                 <aside>
-                    <img src="./public/fotoEstudiante.jpg" style="border: solid 1px black" width="120"
+                    <img src="./public/img/fotoEstudiante.jpg" style="border: solid 1px black" width="120"
                         alt="TEJEDA RODRIGUEZ TIRZO NOE">
                 </aside>
             </div>
@@ -35,167 +57,173 @@
                 </aside>
             </div>
         </section>
-        <table width="98%" border="0" cellpadding="1" cellspacing="0">
-            <tbody>
-                <tr style="background-color:#57812C;color:#FFF;text-align:center;font-weight:bold; padding:2px;">
-                    <th align="center"><b>Sem</b></th>
-                    <th align="center"><b>Gpo</b></th>
-                    <th align="center"><b>Plan</b></th>
-                    <th align="center"><b>Area</b></th>
-                    <th align="center"><b>Carrera</b></th>
-                    <th align="center"><b>Escuela</b></th>
-                </tr>
+        <aside>
+            <table class="mb-4">
+                <thead>
+                    <tr>
+                        <th><b>Semestre</b></th>
+                        <th><b>Grupo</b></th>
+                        <th><b>Plan</b></th>
+                        <th><b>Carrera</b></th>
+                        <th><b>Escuela</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>G</td>
+                        <td>K802</td>
+                        <td>INGENIERIA DE SOFTWARE</td>
+                        <td>FACULTAD DE TELEMATICA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+        <table class="mb-4">
+            <thead>
                 <tr>
-                    <td align="Center">7</td>
-                    <td align="Center">G</td>
-                    <td align="Center">K802</td>
-                    <td align="Center"></td>
-                    <td align="Center">INGENIERIA DE SOFTWARE</td>
-                    <td align="Center">FACULTAD DE TELEMATICA</td>
+                    <th width="50%"><b>Materia</b></th>
+                    <th><b>1ra.</b></th>
+                    <th><b>2da.</b></th>
+                    <th><b>Ord.</b></th>
+                    <th><b>Final</b></th>
+                    <th><b>Extra</b></th>
+                    <th><b>Regu</b></th>
                 </tr>
-            </tbody>
-        </table>
-        <table width="98%" border="0" cellpadding="1" cellspacing="0">
+            </thead>
             <tbody>
-                <tr style="background-color:#57812C;color:#FFF;text-align:center;font-weight:bold; padding:2px">
-                    <th align="center" width="50%"><b>Materia</b></th>
-                    <th align="Center"><b>1ra.</b></th>
-                    <th align="Center"><b>2da.</b></th>
-                    <th align="Center"><b>Ord.</b></th>
-                    <th align="Center"><b>Final</b></th>
-                    <th align="Center"><b>Extra</b></th>
-                    <th align="Center"><b>Regu</b></th>
-                </tr>
 
-                <tr bgcolor="White">
+                <tr>
 
-                    <td>OPTATIVA V ACCESIBILIDAD DE CONTENIDOS</td>
+                    <td class="materia">OPTATIVA V ACCESIBILIDAD DE CONTENIDOS</td>
 
-                    <td align="Center">8</td>
-                    <td align="Center">7.8</td>
-                    <td align="Center">7.5</td>
-                    <td align="Center"><b>7.5</b></td>
+                    <td>8</td>
+                    <td>7.8</td>
+                    <td>7.5</td>
+                    <td><b>7.5</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
                 </tr>
 
-                <tr bgcolor="#EEEEEE">
+                <tr>
 
-                    <td>OPTATIVA VI INGLES COMUNICATIVO PARA EL CAMPO LABORAL</td>
+                    <td class="materia">OPTATIVA VI INGLES COMUNICATIVO PARA EL CAMPO LABORAL</td>
 
-                    <td align="Center">7.2</td>
-                    <td align="Center">6.4</td>
-                    <td align="Center">6.9</td>
-                    <td align="Center"><b>6.9</b></td>
+                    <td>7.2</td>
+                    <td>6.4</td>
+                    <td>6.9</td>
+                    <td><b>6.9</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
                 </tr>
 
             </tbody>
         </table>
-        <table width="98%" border="0" cellpadding="1" cellspacing="0">
+        <table class="mb-2">
+            <thead>
+                <tr>
+                    <th width="50%"><b>Materia</b></th>
+                    <th><b>1ra.</b></th>
+                    <th><b>2da.</b></th>
+                    <th><b>3ra.</b></th>
+                    <th><b>Ord.</b></th>
+                    <th><b>Final</b></th>
+                    <th><b>Extra</b></th>
+                    <th><b>Regu</b></th>
+                </tr>
+            </thead>
             <tbody>
-                <tr style="background-color:#57812C;color:#FFF;text-align:center;font-weight:bold; padding:2px">
-                    <th align="center" width="50%"><b>Materia</b></th>
-                    <th align="Center"><b>1ra.</b></th>
-                    <th align="Center"><b>2da.</b></th>
-                    <th align="Center"><b>3ra.</b></th>
-                    <th align="Center"><b>Ord.</b></th>
-                    <th align="Center"><b>Final</b></th>
-                    <th align="Center"><b>Extra</b></th>
-                    <th align="Center"><b>Regu</b></th>
-                </tr>
 
-                <tr bgcolor="White">
+                <tr>
 
-                    <td>METODOLOGIA DE LA INVESTIGACION</td>
+                    <td class="materia">METODOLOGIA DE LA INVESTIGACION</td>
 
-                    <td align="Center">8.5</td>
-                    <td align="Center">8.2</td>
-                    <td align="Center">7.7</td>
-                    <td align="Center">--</td>
-                    <td align="Center"><b>8.1</b></td>
+                    <td>8.5</td>
+                    <td>8.2</td>
+                    <td>7.7</td>
+                    <td>--</td>
+                    <td><b>8.1</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
                 </tr>
 
-                <tr bgcolor="#EEEEEE">
+                <tr>
 
-                    <td>ELECTIVA VII</td>
+                    <td class="materia">ELECTIVA VII</td>
 
-                    <td align="Center">AC</td>
-                    <td align="Center">AC</td>
-                    <td align="Center">AC</td>
-                    <td align="Center">--</td>
-                    <td align="Center"><b>AC</b></td>
+                    <td>AC</td>
+                    <td>AC</td>
+                    <td>AC</td>
+                    <td>--</td>
+                    <td><b>AC</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
-                    <td align="Center"><b>--</b></td>
-
-                </tr>
-
-                <tr bgcolor="White">
-
-                    <td>SERVICIO SOCIAL UNIVERSITARIO VII</td>
-
-                    <td align="Center">AC</td>
-                    <td align="Center">AC</td>
-                    <td align="Center">AC</td>
-                    <td align="Center">--</td>
-                    <td align="Center"><b>AC</b></td>
-
-                    <td align="Center"><b>--</b></td>
-
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
                 </tr>
 
-                <tr bgcolor="#EEEEEE">
+                <tr>
 
-                    <td>OPTATIVA VII INFORMATICA FORENSE</td>
+                    <td class="materia">SERVICIO SOCIAL UNIVERSITARIO VII</td>
 
-                    <td align="Center">7.2</td>
-                    <td align="Center">8.8</td>
-                    <td align="Center">8.1</td>
-                    <td align="Center">--</td>
-                    <td align="Center"><b>8.0</b></td>
+                    <td>AC</td>
+                    <td>AC</td>
+                    <td>AC</td>
+                    <td>--</td>
+                    <td><b>AC</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
                 </tr>
 
-                <tr bgcolor="White">
+                <tr>
 
-                    <td>SERVICIO SOCIAL CONSTITUCIONAL</td>
+                    <td class="materia">OPTATIVA VII INFORMATICA FORENSE</td>
 
-                    <td align="Center">NA</td>
-                    <td align="Center">NA</td>
-                    <td align="Center">NA</td>
-                    <td align="Center">NA</td>
-                    <td align="Center"><b>NA</b></td>
+                    <td>7.2</td>
+                    <td>8.8</td>
+                    <td>8.1</td>
+                    <td>--</td>
+                    <td><b>8.0</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
 
-                    <td align="Center"><b>--</b></td>
+                    <td><b>--</b></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="materia">SERVICIO SOCIAL CONSTITUCIONAL</td>
+
+                    <td>NA</td>
+                    <td>NA</td>
+                    <td>NA</td>
+                    <td>NA</td>
+                    <td><b>NA</b></td>
+
+                    <td><b>--</b></td>
+
+                    <td><b>--</b></td>
 
                 </tr>
 
             </tbody>
         </table> <br>
-        <p align="center" style="background-color: #57812C; color: #FFF;"><b>Consulta tus calificaciones finales
-                haciendo clic en <a href="/analisis.html" style="color:white;">Análisis </a></b></p>
+        <p class="calfinal"><b>Consulta tus calificaciones finales
+                haciendo clic en <a href="/analisis.html" class="analisis">Análisis </a></b></p>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

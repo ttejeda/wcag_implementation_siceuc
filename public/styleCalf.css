@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    border: 0;
+}
+
+table thead,
+table tfoot {
+    background-color: #57812C;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px
+}
+
+table td {
+    text-align: center;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #FFF;
+}
+
+table tbody tr:nth-child(even) {
+    background: #EEE;
+}
+
+.materia {
+    text-align: left;
+}
+
+.calfinal {
+    background-color: #57812C;
+    color: #FFF;
+    text-align: center;
+}
+
+.analisis {
+    color: #FFF;
+}
+
+.analisis:hover {
+    color: white;
+}
