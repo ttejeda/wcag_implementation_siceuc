@@ -28,6 +28,18 @@ table tbody tr:nth-child(even) {
     text-align: left;
 }
 
+.materia50 {
+    width: 50%;
+}
+
+.materia65 {
+    width: 65%;
+}
+
+.calif10 {
+    width: 10%;
+}
+
 .calfinal {
     background-color: #57812C;
     color: #FFF;
