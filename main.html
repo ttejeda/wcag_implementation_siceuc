@@ -10,24 +10,32 @@
 </head>
 <body>
     <header class="container-fluid">
-        <div class="headerTop container">
+        <div class="headerTop">
             <div class="logo">
                 <img src="./public/img/logo.png" alt="Universidad de Colima">
             </div>
             <div class="titulo">
-                <h1 class="text-white">SISTEMA DE CONTROL ESCOLAR</h1>
+                <h1>SISTEMA DE CONTROL ESCOLAR</h1>
             </div>
         </div>
-        <div class="navbar">
-            <ul class="nav-links">
-                <li><a href="#">Evaluaciones</a></li>
-                <li><a href="#">Análisis</a></li>
-                <li><a href="#">Servicio Social Universitario</a></li>
-                <li><a href="#">Servicio Social Constitucional</a></li>
-                <li><a href="#">Culturales y Deportivas</a></li>
-                <button class="bg-danger rounded logout text-white">Cerrar sesión</button>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="titulo d-lg-none">
+                <h1>SISTEMA DE CONTROL ESCOLAR</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav-links navbar-nav">
+                    <li class="nav-item"><a href="#">Evaluaciones</a></li>
+                    <li class="nav-item"><a href="#">Análisis de Calificaciones</a></li>
+                    <li class="nav-item"><a href="#">Servicio Social Universitario</a></li>
+                    <li class="nav-item"><a href="#">Servicio Social Constitucional</a></li>
+                    <li class="nav-item"><a href="#">Culturales y Deportivas</a></li>
+                    <li class="nav-item"><button class="bg-danger rounded logout text-white">Cerrar sesión</button></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main class="container">
         <section class="alumno">
@@ -55,7 +63,7 @@
         </section>
         <hr>
         <section class="infoAcademico">
-            <h2>Información Académica</h2>
+            <h2>Información académica</h2>
             <div class="tabla">
                 <table>
                     <tbody>
@@ -77,7 +85,83 @@
                 </table>
             </div>
         </section>
+        <hr>
+        <section class="extracurricular">
+            <h2>Información adicional</h2>
+            <div class="ingles">
+                <div class="bar">
+                    <h3 id="ing">Inglés</h3>
+                </div>
+                <div aria-labelledby="ing" class="infoBar">
+                    <p><a href="">Puedes consultar tu resultado del examen de diagnóstico de inglés aquí</a></p>
+                    <p><a href="">Puedes registrarte al Examen de Inglés Avanzado para el egreso dando click aquí</a></p>
+                </div>
+            </div>
+            <div class="electiva">
+                <div class="bar">
+                    <h3 id="elec">Electiva</h3>
+                </div>
+                <div aria-labelledby="elec" class="infoBar">
+                    <p><a href="">Consulta la oferta de Talleres Culturales dando click aquí.</a></p>
+                    <p><a href="">Consulta la oferta deportiva como materia electiva o programa de acreditación 32 horas, según tu plan académico dando click aquí.</a></p>
+                    <p><a href="">Imprime tu formato de inscripción de actividades deportivas aquí.</a></p>
+                </div>
+            </div>
+            <div class="acreditacion">
+                <div class="tabla">
+                    <table>
+                        <tbody>
+                            <tr> 
+                                <th style="width: 60%; text-align: start;">Situación de acreditación</th>
+                                <th>1a</th>
+                                <th>2a</th>
+                                <th>3a</th>
+                                <th>Ordinario</th>
+                                <th>Extraordinario</th>
+                                <th>Eve</th>
+                                <th>Total</th>
+                            </tr> 		 		
+                            <tr>
+                                <td style="text-align: start;">Natación</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: start;">Asistencias al club amigos del arte</td>
+                                <td>2</td>
+                                <td>26</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <th scope="rowgroup" colspan="7">Horas totales:</th>
+                                <td>60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><a href="">Ver tu información sobre la acreditación de actividades y deportivas.</a></p>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="infoFooter">
+            <ul>
+                <li><b>Dirección:</b> Av. Universidad No. 333, Las Víboras; CP 28040 Colima, Colima, México</li>
+            </ul>
+        </div>
+        <div class="derechosReservados">
+            <p>© Derechos Reservados 2013-2016 Universidad de Colima</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

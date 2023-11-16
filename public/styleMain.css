@@ -7,11 +7,11 @@
 }
 
 main {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 section {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
@@ -20,84 +20,317 @@ h2 {
     text-align: center;
 }
 
-.alumno {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+a {
+    color: #0345A1;
+    text-decoration: underline;
 }
 
-.alumno h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    flex: 100%;
-}
-
-.cardAlumno {
-    flex-shrink: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 25px 5px 15px 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    margin: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
-
-.foto {
-    display: flex;
-    flex: 50%;
-    justify-content: center;
-}
-
-.foto img {
-    height: 224px;
-    width: auto;
-    border-radius: 360px;
-}
-
-.infoAlumno {
-    flex: 75%;
-}
-
-.infoAlumno p {
-    line-height: 1.5em;
-    margin-bottom: 5px;
-}
-
-.infoIMSS {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    margin: 1rem;
-    width: 30%;
-    height: 168px;
-}
-
-.infoIMSS p {
-    margin: 1rem;
-}
-
-.tabla {
-    margin: 1rem;
+table {
     width: 100%;
-    flex-grow: 1;
-    text-align: center;
 }
 
-.tabla table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.tabla th{
+th{
     color: white;
     background-color: #57812C;
-    
-    
+    padding: 5px;
 }
 
-.tabla tr {
+tr {
     border: 1px solid #57812C;
 }
+
+td {
+    vertical-align: middle;
+    padding: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 991px){
+    .alumno {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    
+    .alumno h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        flex: 100%;
+    }
+    
+    .cardAlumno {
+        flex-shrink: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px 5px 15px 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .foto {
+        display: flex;
+        flex: 50%;
+        justify-content: center;
+    }
+    
+    .foto img {
+        height: 200px;
+        width: auto;
+    }
+    
+    .infoAlumno {
+        flex: 75%;
+        margin-right: 1rem;
+    }
+    
+    .infoAlumno p {
+        line-height: 1.5em;
+        margin-bottom: 5px;
+    }
+    
+    .infoIMSS {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 1rem;
+        width: 30%;
+        height:fit-content;
+    }
+    
+    .infoIMSS p {
+        margin: 1rem;
+    }
+    
+    .tabla {
+        margin: 1rem;
+        flex-grow: 1;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .extracurricular {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    
+    .extracurricular h2 {
+        width: 100%;
+        margin: 2rem;
+        margin-top: 0px;
+        margin-bottom: 2rem;
+    }
+    
+    .ingles {
+        display: flex;
+        width: 34%;
+        justify-content: center;
+        margin: 1rem;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin-right: 0px;
+    }
+    
+    .ingles h3 {
+        color: white;
+        font-size: x-large;
+        margin: 5px;
+    }
+    
+    .electiva {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        margin: 1rem;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin-right: 0px;
+        margin-left: 2rem;
+    }
+    
+    .electiva h3 {
+        color: white;
+        font-size: x-large;
+        margin: 5px;
+    }
+    
+    .bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #57812C;
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .infoBar p {
+        margin: 1rem;
+        margin-top: 0px;
+    }
+    
+    .acreditacion {
+        width: 100%;
+    }
+    
+    .acreditacion p {
+        text-align: center;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 992px){
+    .alumno {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+    
+    .alumno h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        flex: 100%;
+    }
+    
+    .cardAlumno {
+        flex-shrink: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px 5px 15px 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .foto {
+        display: flex;
+        flex: 50%;
+        justify-content: center;
+    }
+    
+    .foto img {
+        height: 200px;
+        width: auto;
+    }
+    
+    .infoAlumno {
+        flex: 75%;
+        margin-right: 1rem;
+    }
+    
+    .infoAlumno p {
+        line-height: 1.5em;
+        margin-bottom: 5px;
+    }
+    
+    .infoIMSS {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 1rem;
+        width: 30%;
+        height:fit-content;
+    }
+    
+    .infoIMSS p {
+        margin: 1rem;
+    }
+    
+    .tabla {
+        margin: 1rem;
+        flex-grow: 1;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .extracurricular {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    
+    .extracurricular h2 {
+        width: 100%;
+        margin: 2rem;
+        margin-top: 0px;
+        margin-bottom: 2rem;
+    }
+    
+    .ingles {
+        display: flex;
+        width: 34%;
+        justify-content: center;
+        margin: 1rem;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin-right: 0px;
+    }
+    
+    .ingles h3 {
+        color: white;
+        font-size: x-large;
+        margin: 5px;
+    }
+    
+    .electiva {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        margin: 1rem;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin-right: 0px;
+        margin-left: 2rem;
+    }
+    
+    .electiva h3 {
+        color: white;
+        font-size: x-large;
+        margin: 5px;
+    }
+    
+    .bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #57812C;
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .infoBar p {
+        margin: 1rem;
+        margin-top: 0px;
+    }
+    
+    .acreditacion {
+        width: 100%;
+    }
+    
+    .acreditacion p {
+        text-align: center;
+    }
+}
+
+
+
