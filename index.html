@@ -18,7 +18,7 @@
                 <h1>SISTEMA DE CONTROL ESCOLAR</h1>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
             <div class="titulo d-lg-none">
                 <h1>SISTEMA DE CONTROL ESCOLAR</h1>
             </div>
@@ -49,7 +49,7 @@
                     <div class="infoAlumno" aria-labelledby="infoTitle">
                         <p><b>Nombre: </b>TEJEDA RODRIGUEZ TIRZO NOE</p>
                         <p><b>Cuenta: </b>20173516</p>
-                        <p><b>C.U.R.P.: </b>TERT020207HCMJDRA0</p>
+                        <p><b>CURP: </b>TERT020207HCMJDRA0</p>
                         <p><b>Edad: </b>21</p>
                         <p><b>Saldo en monedero electrónico: </b>$0.00</p>
                         <p><b>Número IMSS: </b>35160251811</p>
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <hr>
+        <hr role="presentation">
         <section class="infoAcademico">
             <h2>Información académica</h2>
             <div class="tabla table-responsive">
@@ -86,15 +86,15 @@
                 </table>
             </div>
         </section>
-        <hr>
+        <hr role="presentation">
         <section class="extracurricular">
-            <h2>Información adicional</h2>
+            <h2 id="infoAdicional">Actividades Complementarias y Acreditación</h2>
             <div class="cuadros">
                 <div class="ingles">
                     <div class="bar">
                         <h3 id="ing">Inglés</h3>
                     </div>
-                    <div aria-labelledby="ing" class="infoBar">
+                    <div aria-labelledby="infoAdicional ing" class="infoBar">
                         <p><a href="">Puedes consultar tu resultado del examen de diagnóstico de inglés aquí</a></p>
                         <p><a href="">Puedes registrarte al Examen de Inglés Avanzado para el egreso dando click aquí</a></p>
                     </div>
@@ -103,7 +103,7 @@
                     <div class="bar">
                         <h3 id="elec">Electiva</h3>
                     </div>
-                    <div aria-labelledby="elec" class="infoBar">
+                    <div aria-labelledby="infoAdicional elec" class="infoBar">
                         <p><a href="">Consulta la oferta de Talleres Culturales dando click aquí.</a></p>
                         <p><a href="">Consulta la oferta deportiva como materia electiva o programa de acreditación 32 horas, según tu plan académico dando click aquí.</a></p>
                         <p><a href="">Imprime tu formato de inscripción de actividades deportivas aquí.</a></p>
@@ -116,12 +116,12 @@
                         <tbody>
                             <tr> 
                                 <th style="text-align: center;" scope="col">Situación de acreditación</th>
-                                <th scope="col">1a</th>
-                                <th scope="col">2a</th>
-                                <th scope="col">3a</th>
+                                <th scope="col" aria-label="Primera Parcial">1ª Parcial</th>
+                                <th scope="col" aria-label="Segunda Parcial">2ª Parcial</th>
+                                <th scope="col" aria-label="Tercera Parcial">3ª Parcial</th>
                                 <th scope="col">Ordinario</th>
                                 <th scope="col">Extraordinario</th>
-                                <th scope="col">Eve</th>
+                                <th scope="col">Regularización</th>
                                 <th scope="col">Total</th>
                             </tr> 		 		
                             <tr>
