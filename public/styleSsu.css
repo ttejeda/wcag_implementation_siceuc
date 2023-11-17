@@ -14,6 +14,10 @@ section {
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 }
 
+iframe {
+    margin-bottom: 2rem;
+}
+
 .row {
     padding-bottom: 2rem;
 }
@@ -96,6 +100,13 @@ section {
     .positivo {
         color: #57812C;
     }
+
+    .video {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -149,6 +160,13 @@ section {
     
     .positivo {
         color: #57812C;
+    }
+
+    .video {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
 
