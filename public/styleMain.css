@@ -46,31 +46,32 @@ td {
 
 /* MOBILE */
 @media (max-width: 991px){
-    .alumno {
-        margin-top: 2rem;
+    .alumno, .infoAcademico, .extracurricular {
+        margin-top: 0rem;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 0px;
     }
     
-    .alumno h2 {
+    .alumno h2, .infoAcademico h2, .extracurricular h2 {
         text-align: center;
         margin-bottom: 1rem;
+        margin-top: 1rem;
         flex: 100%;
     }
     
     .cardAlumno {
-        flex-shrink: 1;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
         align-items: center;
         padding: 25px 5px 15px 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
-        margin: 2rem;
-        margin-bottom: 2rem;
+        margin: 1rem;
         margin-top: 1rem;
+        margin-bottom: 2rem;
     }
     
     .foto {
@@ -86,6 +87,7 @@ td {
     
     .infoAlumno {
         flex: 75%;
+        margin: 2rem;
         margin-right: 1rem;
     }
     
@@ -98,7 +100,8 @@ td {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
         margin: 1rem;
-        width: 30%;
+        margin-top: 0px;
+        width: 100%;
         height:fit-content;
     }
     
@@ -108,9 +111,9 @@ td {
     
     .tabla {
         margin: 1rem;
-        flex-grow: 1;
+        margin-top: 0rem;
         text-align: center;
-        width: 100%;
+        
     }
     
     .extracurricular {
@@ -119,43 +122,39 @@ td {
         justify-content: space-between;
     
     }
-    
-    .extracurricular h2 {
-        width: 100%;
-        margin: 2rem;
-        margin-top: 0px;
-        margin-bottom: 2rem;
+
+    .cuadros {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
     }
     
     .ingles {
         display: flex;
-        width: 34%;
+        width: 100%;
         justify-content: center;
         margin: 1rem;
         margin-top: 0px;
         flex-wrap: wrap;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
-        margin-right: 0px;
+        align-items: flex-start;
     }
     
     .ingles h3 {
         color: white;
         font-size: x-large;
-        margin: 5px;
     }
     
     .electiva {
         display: flex;
-        width: 60%;
+        width: 100%;
         justify-content: center;
         margin: 1rem;
-        margin-top: 0px;
         flex-wrap: wrap;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
-        margin-right: 0px;
-        margin-left: 2rem;
     }
     
     .electiva h3 {
@@ -180,20 +179,31 @@ td {
     }
     
     .acreditacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         width: 100%;
     }
     
     .acreditacion p {
         text-align: center;
     }
+
+    .infoAcademico {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 /* DESKTOP */
 @media (min-width: 992px){
-    .alumno {
-        margin-top: 2rem;
+    .alumno, .infoAcademico, .extracurricular {
+        margin: 2rem;
         display: flex;
-        align-items: center;
+        justify-content: center;
+        align-items:flex-start;
         flex-wrap: wrap;
         margin-bottom: 0px;
     }
@@ -251,10 +261,10 @@ td {
     }
     
     .tabla {
+        display: flex;
+        justify-content: center;
         margin: 1rem;
-        flex-grow: 1;
         text-align: center;
-        width: 100%;
     }
     
     .extracurricular {
@@ -268,19 +278,22 @@ td {
         width: 100%;
         margin: 2rem;
         margin-top: 0px;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .cuadros {
+        display: flex;
+        justify-content: center;
     }
     
     .ingles {
         display: flex;
-        width: 34%;
+        width: 100%;
         justify-content: center;
         margin: 1rem;
-        margin-top: 0px;
         flex-wrap: wrap;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
-        margin-right: 0px;
     }
     
     .ingles h3 {
@@ -291,15 +304,12 @@ td {
     
     .electiva {
         display: flex;
-        width: 60%;
+        width: 100%;
         justify-content: center;
         margin: 1rem;
-        margin-top: 0px;
         flex-wrap: wrap;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
-        margin-right: 0px;
-        margin-left: 2rem;
     }
     
     .electiva h3 {
@@ -324,7 +334,7 @@ td {
     }
     
     .acreditacion {
-        width: 100%;
+        width: 97%;
     }
     
     .acreditacion p {

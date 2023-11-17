@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px
+}
+
+section {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+    padding-bottom: 2rem;
+}
+
+.titulo {
+    text-align: center;
+    margin: 2rem;
+}
+
+.titulo h2 {
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+}
+
+.datos {
+    background-color: #304960;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.datos p {
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* DESKTOP */
+@media (min-width: 992px){
+    .tarjeta {
+        display: flex;
+        align-items: flex-start;
+        background-color: white;
+        border: 1px solid #3049608c;
+        border-radius: 1rem;
+    }
+    
+    .actividad {
+        flex: 35%;
+        margin: 1rem;
+        text-align: center;
+        padding-right: 1rem;
+    }
+    
+    .actividad h3 {
+        font-size: larger;
+        font-weight: 500;
+        color: #06447e;
+        margin-bottom: 1rem;
+    }
+    
+    .actividad p {
+        margin: 5px;
+        font-size: medium;
+        margin-bottom: 0px;
+    }
+
+    .actividad hr {
+        display: none;
+    }
+    
+    .descripcion {
+        flex: 65%;
+        margin: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+        text-align:justify;
+    }
+    
+    .descripcion p {
+        margin-bottom: 5px;
+    }
+    
+    .positivo {
+        color: #57812C;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 991px){
+    .tarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-color: white;
+        border: 1px solid #3049608c;
+        border-radius: 1rem;
+    }
+    
+    .actividad {
+        flex: 35%;
+        margin: 1rem;
+        text-align: center;
+        padding-right: 1rem;
+    }
+    
+    .actividad h3 {
+        font-size: larger;
+        font-weight: 500;
+        color: #06447e;
+        margin-bottom: 1rem;
+    }
+    
+    .actividad p {
+        margin: 5px;
+        margin-top: 0px;
+        font-size: medium;
+        margin-bottom: 0px;
+    }
+    .actividad hr {
+        margin-bottom: 0px;
+    }
+    
+    .descripcion {
+        flex: 65%;
+        margin: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+        text-align:justify;
+    }
+    
+    .descripcion p {
+        margin-bottom: 5px;
+    }
+    
+    .positivo {
+        color: #57812C;
+    }
+}
+
+
+

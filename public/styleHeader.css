@@ -26,7 +26,7 @@
     
     .titulo h1{
         margin-bottom: 0;
-        font-size: x-large;
+        font-size: large;
         font-weight: bold;
         color: white;
     }
@@ -145,7 +145,7 @@
         justify-content: space-around;
         align-items: center;
         margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
     
     .titulo h1{
@@ -170,13 +170,13 @@
     
     .nav-links li{
         display: flex;
-        margin: 1rem;
-        margin-bottom: 0px;
+        margin: 0rem;
+        margin-bottom: 1rem;
         list-style: none;
         padding: 0 20px;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 0rem;
     }
     
     .nav-links a {
@@ -208,8 +208,11 @@
     /* ------- FOOTER ----------- */
     footer {
         display: flex;
+        position: static;
         flex-direction: column;
         align-items: center;
+        bottom: 0;
+        width: 100%;
     }
     
     .infoFooter {
