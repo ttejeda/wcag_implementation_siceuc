@@ -1,6 +1,12 @@
 table {
     width: 100%;
     border: 0;
+    overflow-x: auto;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
 }
 
 table thead,
@@ -14,6 +20,10 @@ table tfoot {
 
 table td {
     text-align: center;
+}
+
+.table-cont {
+    overflow-x: auto;
 }
 
 table tbody tr:nth-child(odd) {
@@ -52,4 +62,152 @@ table tbody tr:nth-child(even) {
 
 .analisis:hover {
     color: white;
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+
+    .alumno,
+    .infoAcademico,
+    .extracurricular {
+        margin-top: 0rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    .cardAlumno {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 25px 5px 15px 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .foto {
+        display: flex;
+        flex: 50%;
+        justify-content: center;
+    }
+
+    .foto img {
+        height: 200px;
+        width: auto;
+    }
+
+    .infoAlumno {
+        flex: 75%;
+        margin: 2rem;
+        margin-right: 1rem;
+    }
+
+    .infoAlumno p {
+        line-height: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .infoIMSS {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 1rem;
+        margin-top: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .infoIMSS p {
+        margin: 1rem;
+    }
+
+    .tabla {
+        margin: 1rem;
+        margin-top: 0rem;
+        text-align: center;
+
+    }
+
+    .cuadros {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+
+    .alumno,
+    .infoAcademico,
+    .extracurricular {
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    .alumno h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        flex: 100%;
+    }
+
+    .cardAlumno {
+        flex-shrink: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px 5px 15px 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .foto {
+        display: flex;
+        flex: 50%;
+        justify-content: center;
+    }
+
+    .foto img {
+        height: 200px;
+        width: auto;
+    }
+
+    .infoAlumno {
+        flex: 75%;
+        margin-right: 1rem;
+    }
+
+    .infoAlumno p {
+        line-height: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .infoIMSS {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 1rem;
+        width: 30%;
+        height: fit-content;
+    }
+
+    .infoIMSS p {
+        margin: 1rem;
+    }
+
+    .cuadros {
+        display: flex;
+        justify-content: center;
+    }
 }

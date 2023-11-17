@@ -8,7 +8,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/styleHeader.css">
     <link rel="stylesheet" href="./public/styleCalf.css">
-    <title>Calificaiones del semestre actual</title>
+    <title>EVALUACIONES</title>
 </head>
 
 <body>
@@ -18,213 +18,200 @@
                 <img src="./public/img/logo.png" alt="Universidad de Colima">
             </div>
             <div class="titulo">
-                <h1 class="text-white">Calificaiones del semestre actual</h1>
+                <h1 class="text-white">EVALUACIONES</h1>
             </div>
         </div>
-        <div class="navbar">
-            <ul class="nav-links">
-                <li><a href="./calificaciones.html">Evaluaciones</a></li>
-                <li><a href="./analisis.html">Análisis</a></li>
-                <li><a href="#">Servicio Social Universitario</a></li>
-                <li><a href="#">Servicio Social Constitucional</a></li>
-                <li><a href="#">Culturales y Deportivas</a></li>
-                <li class="bg-danger rounded logout"><a href="#">Cerrar sesión</a></li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="titulo d-lg-none">
+                <h1>EVALUACIONES</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav-links navbar-nav">
+                    <li class="nav-item active"><a href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a href="./calificaciones.html">Evaluaciones</a></li>
+                    <li class="nav-item"><a href="./analisis.html">Análisis de Calificaciones</a></li>
+                    <li class="nav-item"><a href="./ssu.html">Servicio Social Universitario</a></li>
+                    <li class="nav-item"><a href="#">Servicio Social Constitucional</a></li>
+                    <li class="nav-item"><a href="#">Culturales y Deportivas</a></li>
+                    <li class="nav-item"><button class="bg-danger rounded logout text-white">Cerrar sesión</button></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main class="container mt-4">
-        <section class="d-flex justify-content-center mb-2">
-            <div class="mr-2 mt-2">
-                <aside>
-                    <img src="./public/img/fotoEstudiante.jpg" style="border: solid 1px black" width="120"
-                        alt="TEJEDA RODRIGUEZ TIRZO NOE">
-                </aside>
-            </div>
-            <div class="ml-2">
-                <aside class="span9">
-                    <b>Nombre: </b>TEJEDA RODRIGUEZ TIRZO NOE<br>
-
-                    <b>Cuenta: </b>20173516<br>
-                    <b>C.U.R.P.: </b>TERT020207HCMJDRA0<br>
-                    <b>Edad: </b>21<br>
-                    <b>Saldo en monedero electrónico: </b>
-                    $0.00
-                    <br>
-                    <b>Número IMSS:</b>
-                    35160251811<b> UMF: </b>0
-                    <br>
-                    Si tu número de afiliación no es correcto, repórtalo a tu plantel.<br>
-                </aside>
+        <section class="alumno">
+            <h2 id="infoTitle">Información del estudiante</h2>
+            <div class="cuadros">
+                <div class="cardAlumno">
+                    <div class="foto">
+                        <img class="border border-light" src="./public/img/fotoEstudiante.jpg" alt="">
+                    </div>
+                    <div class="infoAlumno" aria-labelledby="infoTitle">
+                        <p><b>Nombre: </b>TEJEDA RODRIGUEZ TIRZO NOE</p>
+                        <p><b>Cuenta: </b>20173516</p>
+                        <p><b>C.U.R.P.: </b>TERT020207HCMJDRA0</p>
+                        <p><b>Edad: </b>21</p>
+                        <p><b>Saldo en monedero electrónico: </b>$0.00</p>
+                        <p><b>Número IMSS: </b>35160251811</p>
+                        <p>Si tu número de afiliación no es correcto, repórtalo a tu plantel.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <aside>
+            <div class="table-cont">
+                <table class="mb-4">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Semestre</b></th>
+                            <th scope="col"><b>Grupo</b></th>
+                            <th scope="col"><b>Plan</b></th>
+                            <th scope="col"><b>Carrera</b></th>
+                            <th scope="col"><b>Escuela</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7</td>
+                            <td>G</td>
+                            <td>K802</td>
+                            <td>INGENIERIA DE SOFTWARE</td>
+                            <td>FACULTAD DE TELEMATICA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+        <h2>Calificaciones del séptimo semestre</h2>
+        <h3>Materias de 2 parciales</h3>
+        <div class="table-cont">
             <table class="mb-4">
                 <thead>
                     <tr>
-                        <th scope="col"><b>Semestre</b></th>
-                        <th scope="col"><b>Grupo</b></th>
-                        <th scope="col"><b>Plan</b></th>
-                        <th scope="col"><b>Carrera</b></th>
-                        <th scope="col"><b>Escuela</b></th>
+                        <th scope="col" class="materia50"><b>Materia</b></th>
+                        <th scope="col"><b>1ra.</b></th>
+                        <th scope="col"><b>2da.</b></th>
+                        <th scope="col"><b>Ord.</b></th>
+                        <th scope="col"><b>Final</b></th>
+                        <th scope="col"><b>Extra</b></th>
+                        <th scope="col"><b>Regu</b></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>7</td>
-                        <td>G</td>
-                        <td>K802</td>
-                        <td>INGENIERIA DE SOFTWARE</td>
-                        <td>FACULTAD DE TELEMATICA</td>
+                        <td class="materia">OPTATIVA V ACCESIBILIDAD DE CONTENIDOS</td>
+
+                        <td>8</td>
+                        <td>7.8</td>
+                        <td>7.5</td>
+                        <td><b>7.5</b></td>
+                        <td><b>--</b></td>
+                        <td><b>--</b></td>
+                    </tr>
+                    <tr>
+                        <td class="materia">OPTATIVA VI INGLES COMUNICATIVO PARA EL CAMPO LABORAL</td>
+
+                        <td>7.2</td>
+                        <td>6.4</td>
+                        <td>6.9</td>
+                        <td><b>6.9</b></td>
+                        <td><b>--</b></td>
+                        <td><b>--</b></td>
                     </tr>
                 </tbody>
             </table>
-        </aside>
-        <table class="mb-4">
-            <thead>
-                <tr>
-                    <th scope="col" class="materia50"><b>Materia</b></th>
-                    <th scope="col"><b>1ra.</b></th>
-                    <th scope="col"><b>2da.</b></th>
-                    <th scope="col"><b>Ord.</b></th>
-                    <th scope="col"><b>Final</b></th>
-                    <th scope="col"><b>Extra</b></th>
-                    <th scope="col"><b>Regu</b></th>
-                </tr>
-            </thead>
-            <tbody>
+        </div>
+        <h3>Materias de 3 parciales</h3>
+        <div class="table-cont">
+            <table class="mb-2">
+                <thead>
+                    <tr>
+                        <th scope="col" class="materia50"><b>Materia</b></th>
+                        <th scope="col"><b>1ra.</b></th>
+                        <th scope="col"><b>2da.</b></th>
+                        <th scope="col"><b>3ra.</b></th>
+                        <th scope="col"><b>Ord.</b></th>
+                        <th scope="col"><b>Final</b></th>
+                        <th scope="col"><b>Extra</b></th>
+                        <th scope="col"><b>Regu</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="materia">METODOLOGIA DE LA INVESTIGACION</td>
 
-                <tr>
+                        <td>8.5</td>
+                        <td>8.2</td>
+                        <td>7.7</td>
+                        <td>--</td>
+                        <td><b>8.1</b></td>
+                        <td><b>--</b></td>
+                        <td><b>--</b></td>
+                    </tr>
+                    <tr>
+                        <td class="materia">ELECTIVA VII</td>
 
-                    <td class="materia">OPTATIVA V ACCESIBILIDAD DE CONTENIDOS</td>
+                        <td>AC</td>
+                        <td>AC</td>
+                        <td>AC</td>
+                        <td>--</td>
+                        <td><b>AC</b></td>
+                        <td><b>--</b></td>
+                        <td><b>--</b></td>
+                    </tr>
+                    <tr>
+                        <td class="materia">SERVICIO SOCIAL UNIVERSITARIO VII</td>
 
-                    <td>8</td>
-                    <td>7.8</td>
-                    <td>7.5</td>
-                    <td><b>7.5</b></td>
+                        <td>AC</td>
+                        <td>AC</td>
+                        <td>AC</td>
+                        <td>--</td>
+                        <td><b>AC</b></td>
+                        <td><b>--</b></td>
+                        <td><b>--</b></td>
+                    </tr>
+                    <tr>
+                        <td class="materia">OPTATIVA VII INFORMATICA FORENSE</td>
 
-                    <td><b>--</b></td>
+                        <td>7.2</td>
+                        <td>8.8</td>
+                        <td>8.1</td>
+                        <td>--</td>
+                        <td><b>8.0</b></td>
+                        <td><b>--</b></td>
+                        <td><b>--</b></td>
+                    </tr>
+                    <tr>
+                        <td class="materia">SERVICIO SOCIAL CONSTITUCIONAL</td>
 
-                    <td><b>--</b></td>
-
-                </tr>
-
-                <tr>
-
-                    <td class="materia">OPTATIVA VI INGLES COMUNICATIVO PARA EL CAMPO LABORAL</td>
-
-                    <td>7.2</td>
-                    <td>6.4</td>
-                    <td>6.9</td>
-                    <td><b>6.9</b></td>
-
-                    <td><b>--</b></td>
-
-                    <td><b>--</b></td>
-
-                </tr>
-
-            </tbody>
-        </table>
-        <table class="mb-2">
-            <thead>
-                <tr>
-                    <th scope="col" class="materia50"><b>Materia</b></th>
-                    <th scope="col"><b>1ra.</b></th>
-                    <th scope="col"><b>2da.</b></th>
-                    <th scope="col"><b>3ra.</b></th>
-                    <th scope="col"><b>Ord.</b></th>
-                    <th scope="col"><b>Final</b></th>
-                    <th scope="col"><b>Extra</b></th>
-                    <th scope="col"><b>Regu</b></th>
-                </tr>
-            </thead>
-            <tbody>
-
-                <tr>
-
-                    <td class="materia">METODOLOGIA DE LA INVESTIGACION</td>
-
-                    <td>8.5</td>
-                    <td>8.2</td>
-                    <td>7.7</td>
-                    <td>--</td>
-                    <td><b>8.1</b></td>
-
-                    <td><b>--</b></td>
-
-                    <td><b>--</b></td>
-
-                </tr>
-
-                <tr>
-
-                    <td class="materia">ELECTIVA VII</td>
-
-                    <td>AC</td>
-                    <td>AC</td>
-                    <td>AC</td>
-                    <td>--</td>
-                    <td><b>AC</b></td>
-
-                    <td><b>--</b></td>
-
-                    <td><b>--</b></td>
-
-                </tr>
-
-                <tr>
-
-                    <td class="materia">SERVICIO SOCIAL UNIVERSITARIO VII</td>
-
-                    <td>AC</td>
-                    <td>AC</td>
-                    <td>AC</td>
-                    <td>--</td>
-                    <td><b>AC</b></td>
-
-                    <td><b>--</b></td>
-
-                    <td><b>--</b></td>
-
-                </tr>
-
-                <tr>
-
-                    <td class="materia">OPTATIVA VII INFORMATICA FORENSE</td>
-
-                    <td>7.2</td>
-                    <td>8.8</td>
-                    <td>8.1</td>
-                    <td>--</td>
-                    <td><b>8.0</b></td>
-
-                    <td><b>--</b></td>
-
-                    <td><b>--</b></td>
-
-                </tr>
-
-                <tr>
-
-                    <td class="materia">SERVICIO SOCIAL CONSTITUCIONAL</td>
-
-                    <td>NA</td>
-                    <td>NA</td>
-                    <td>NA</td>
-                    <td>NA</td>
-                    <td><b>NA</b></td>
-
-                    <td><b>--</b></td>
-
-                    <td><b>--</b></td>
-
-                </tr>
-
-            </tbody>
-        </table> <br>
+                        <td>NA</td>
+                        <td>NA</td>
+                        <td>NA</td>
+                        <td>NA</td>
+                        <td><b>NA</b></td>
+                        <td><b>--</b></td>
+                        <td><b>--</b></td>
+                    </tr>
+                </tbody>
+            </table> <br>
+        </div>
         <p class="calfinal"><b>Consulta tus calificaciones finales
                 haciendo clic en <a href="/analisis.html" class="analisis">Análisis </a></b></p>
     </main>
+    <footer>
+        <div class="infoFooter">
+            <ul>
+                <li><b>Dirección:</b> Av. Universidad No. 333, Las Víboras; CP 28040 Colima, Colima, México</li>
+            </ul>
+        </div>
+        <div class="derechosReservados">
+            <p>© Derechos Reservados 2013-2016 Universidad de Colima</p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

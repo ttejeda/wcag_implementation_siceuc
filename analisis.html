@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags -->
@@ -11,7 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/styleHeader.css">
     <link rel="stylesheet" href="./public/styleCalf.css">
-    <title>Análisis de calificaciones</title>
+    <title>ANÁLISIS DE CALIFICIACIONES</title>
 </head>
 
 <body>
@@ -21,703 +21,738 @@
                 <img src="./public/img/logo.png" alt="Universidad de Colima">
             </div>
             <div class="titulo">
-                <h1 class="text-white">Análisis de calificaciones</h1>
+                <h1 class="text-white">ANÁLISIS DE CALIFICIACIONES</h1>
             </div>
         </div>
-        <div class="navbar">
-            <ul class="nav-links">
-                <li><a href="./calificaciones.html">Evaluaciones</a></li>
-                <li><a href="./analisis.html">Análisis</a></li>
-                <li><a href="#">Servicio Social Universitario</a></li>
-                <li><a href="#">Servicio Social Constitucional</a></li>
-                <li><a href="#">Culturales y Deportivas</a></li>
-                <li class="bg-danger rounded logout"><a href="#">Cerrar sesión</a></li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="titulo d-lg-none">
+                <h1>ANÁLISIS DE CALIFICIACIONES</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav-links navbar-nav">
+                    <li class="nav-item active"><a href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a href="./calificaciones.html">Evaluaciones</a></li>
+                    <li class="nav-item"><a href="./analisis.html">Análisis de Calificaciones</a></li>
+                    <li class="nav-item"><a href="./ssu.html">Servicio Social Universitario</a></li>
+                    <li class="nav-item"><a href="#">Servicio Social Constitucional</a></li>
+                    <li class="nav-item"><a href="#">Culturales y Deportivas</a></li>
+                    <li class="nav-item"><button class="bg-danger rounded logout text-white">Cerrar sesión</button></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="container mt-4">
-        <section class="d-flex justify-content-center mb-4">
-            <div class="mr-2 mt-2">
-                <aside>
-                    <img src="./public//img/fotoEstudiante.jpg" style="border: solid 1px black" width="120"
-                        alt="TEJEDA RODRIGUEZ TIRZO NOE">
-                </aside>
-            </div>
-            <div class="ml-2">
-                <aside class="span9">
-                    <b>Nombre: </b>TEJEDA RODRIGUEZ TIRZO NOE<br>
-
-                    <b>Cuenta: </b>20173516<br>
-                    <b>C.U.R.P.: </b>TERT020207HCMJDRA0<br>
-                    <b>Edad: </b>21<br>
-                </aside>
+        <section class="alumno">
+            <h2 id="infoTitle">Información del estudiante</h2>
+            <div class="cuadros">
+                <div class="cardAlumno">
+                    <div class="foto">
+                        <img class="border border-light" src="./public/img/fotoEstudiante.jpg" alt="">
+                    </div>
+                    <div class="infoAlumno" aria-labelledby="infoTitle">
+                        <p><b>Nombre: </b>TEJEDA RODRIGUEZ TIRZO NOE</p>
+                        <p><b>Cuenta: </b>20173516</p>
+                        <p><b>C.U.R.P.: </b>TERT020207HCMJDRA0</p>
+                        <p><b>Edad: </b>21</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <aside class="span12"><br>
-            <table class="mb-2">
-                <thead>
-                    <tr>
-                        <th scope="col"><b>Sem</b></th>
-                        <th scope="col"><b>Gpo</b></th>
-                        <th scope="col"><b>Plan</b></th>
-                        <th scope="col"><b>Carrera</b></th>
-                        <th scope="col"><b>Escuela</b></th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr>
-                        <td>7</td>
-                        <td>G</td>
-                        <td>K802</td>
-                        <td>INGENIERIA DE SOFTWARE</td>
-                        <td>FACULTAD DE TELEMATICA</td>
-                    </tr>
-                </tbody>
-            </table>
+        <aside>
+            <div class="table-cont">
+                <table class="mb-2">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Semestre</b></th>
+                            <th scope="col"><b>Grupo</b></th>
+                            <th scope="col"><b>Plan</b></th>
+                            <th scope="col"><b>Carrera</b></th>
+                            <th scope="col"><b>Escuela</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7</td>
+                            <td>G</td>
+                            <td>K802</td>
+                            <td>INGENIERIA DE SOFTWARE</td>
+                            <td>FACULTAD DE TELEMATICA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </aside>
-        <div class="row-fluid">
+        <div class="">
             <aside><br>
                 <p>FORMATO EXCLUSIVAMENTE PARA CONSULTA, NO REPRESENTA UN DOCUMENTO OFICIAL.</p>
             </aside>
             <main>
                 <h2>Semestre 1</h2>
-                <table class="mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="materia materia65"><b>Materia</b></th>
-                            <th scope="col" class="calif10"><b>Calif.</b></th>
-                            <th scope="col"><b>Examen</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <div class="table-cont">
+                    <table class="mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="materia materia65"><b>Materia</b></th>
+                                <th scope="col" class="calif10"><b>Calif.</b></th>
+                                <th scope="col"><b>Examen</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
 
-                        <tr>
-                            <td class="materia">FUNDAMENTOS DE PROGRAMACION</td>
+                            <tr>
+                                <td class="materia">FUNDAMENTOS DE PROGRAMACION</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ETICA PARA INGENIERIA</td>
+                            <tr>
+                                <td class="materia">ETICA PARA INGENIERIA</td>
 
-                            <td>9.9</td>
+                                <td>9.9</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">FUNDAMENTOS DE REDES DE DATOS</td>
+                            <tr>
+                                <td class="materia">FUNDAMENTOS DE REDES DE DATOS</td>
 
-                            <td>9.1</td>
+                                <td>9.1</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">MATEMATICAS BASICAS</td>
+                            <tr>
+                                <td class="materia">MATEMATICAS BASICAS</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SISTEMAS OPERATIVOS</td>
+                            <tr>
+                                <td class="materia">SISTEMAS OPERATIVOS</td>
 
-                            <td>9.7</td>
+                                <td>9.7</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INTRODUCCION A LA INGENIERIA DE SOFTWARE</td>
+                            <tr>
+                                <td class="materia">INTRODUCCION A LA INGENIERIA DE SOFTWARE</td>
 
-                            <td>9</td>
+                                <td>9</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INGLES I</td>
+                            <tr>
+                                <td class="materia">INGLES I</td>
 
-                            <td>9.9</td>
+                                <td>9.9</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ELECTIVA I</td>
+                            <tr>
+                                <td class="materia">ELECTIVA I</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL UNIVERSITARIO I</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL UNIVERSITARIO I</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
+                                <td>Ordinario</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
 
-                            <td colspan="3"><b>Promedio:
-                                    9.66</b></td>
+                                <td colspan="3"><b>Promedio:
+                                        9.66</b></td>
 
-                        </tr>
-                    </tfoot>
-                </table>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <h2>Semestre 2</h2>
-                <table class="mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="materia materia65"><b>Materia</b></th>
-                            <th scope="col" class="calif10"><b>Calif.</b></th>
-                            <th scope="col"><b>Examen</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="materia">PROGRAMACION ORIENTADA A OBJETOS</td>
+                <div class="table-cont">
+                    <table class="mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="materia materia65"><b>Materia</b></th>
+                                <th scope="col" class="calif10"><b>Calif.</b></th>
+                                <th scope="col"><b>Examen</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="materia">PROGRAMACION ORIENTADA A OBJETOS</td>
 
-                            <td>9</td>
+                                <td>9</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SISTEMAS DIGITALES</td>
+                            <tr>
+                                <td class="materia">SISTEMAS DIGITALES</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIOS DE INTERNET</td>
+                            <tr>
+                                <td class="materia">SERVICIOS DE INTERNET</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">METODOS NUMERICOS</td>
+                            <tr>
+                                <td class="materia">METODOS NUMERICOS</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">DESARROLLO EMPRENDEDOR</td>
+                            <tr>
+                                <td class="materia">DESARROLLO EMPRENDEDOR</td>
 
-                            <td>9.3</td>
+                                <td>9.3</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">CICLO DE VIDA DEL DESARROLLO DE SOFTWARE</td>
+                            <tr>
+                                <td class="materia">CICLO DE VIDA DEL DESARROLLO DE SOFTWARE</td>
 
-                            <td>9.1</td>
+                                <td>9.1</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INGLES II</td>
+                            <tr>
+                                <td class="materia">INGLES II</td>
 
-                            <td>9.3</td>
+                                <td>9.3</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ELECTIVA II</td>
+                            <tr>
+                                <td class="materia">ELECTIVA II</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL UNIVERSITARIO II</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL UNIVERSITARIO II</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
+                                <td>Ordinario</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
 
-                            <td colspan="3">
-                                <b>Promedio: 9.53</b>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+                                <td colspan="3">
+                                    <b>Promedio: 9.53</b>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <h2>Semestre 3</h2>
-                <table class="mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="materia materia65"><b>Materia</b></th>
-                            <th scope="col" class="calif10"><b>Calif.</b></th>
-                            <th scope="col"><b>Examen</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="materia">ESTRUCTURA DE DATOS</td>
+                <div class="table-cont">
+                    <table class="mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="materia materia65"><b>Materia</b></th>
+                                <th scope="col" class="calif10"><b>Calif.</b></th>
+                                <th scope="col"><b>Examen</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="materia">ESTRUCTURA DE DATOS</td>
 
-                            <td>9.5</td>
+                                <td>9.5</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ESTRUCTURAS DE COMPUTADORAS</td>
+                            <tr>
+                                <td class="materia">ESTRUCTURAS DE COMPUTADORAS</td>
 
-                            <td>9.9</td>
+                                <td>9.9</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">LEGISLACION Y DERECHO INFORMATICO</td>
+                            <tr>
+                                <td class="materia">LEGISLACION Y DERECHO INFORMATICO</td>
 
-                            <td>9.4</td>
+                                <td>9.4</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">MATEMATICAS DISCRETAS</td>
+                            <tr>
+                                <td class="materia">MATEMATICAS DISCRETAS</td>
 
-                            <td>9.5</td>
+                                <td>9.5</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">METODOLOGIAS AGILES</td>
+                            <tr>
+                                <td class="materia">METODOLOGIAS AGILES</td>
 
-                            <td>9.5</td>
+                                <td>9.5</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">BASES DE DATOS</td>
+                            <tr>
+                                <td class="materia">BASES DE DATOS</td>
 
-                            <td>9.5</td>
+                                <td>9.5</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INGLES III</td>
+                            <tr>
+                                <td class="materia">INGLES III</td>
 
-                            <td>9.5</td>
+                                <td>9.5</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ELECTIVA III</td>
+                            <tr>
+                                <td class="materia">ELECTIVA III</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL UNIVERSITARIO III</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL UNIVERSITARIO III</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
+                                <td>Ordinario</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
 
-                            <td colspan="3">
-                                <b>Promedio: 9.54</b>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+                                <td colspan="3">
+                                    <b>Promedio: 9.54</b>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <h2>Semestre 4</h2>
-                <table class="mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="materia materia65"><b>Materia</b></th>
-                            <th scope="col" class="calif10"><b>Calif.</b></th>
-                            <th scope="col"><b>Examen</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="materia">FORMULACION DE PROYECTOS DE SOFTWARE</td>
+                <div class="table-cont">
+                    <table class="mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="materia materia65"><b>Materia</b></th>
+                                <th scope="col" class="calif10"><b>Calif.</b></th>
+                                <th scope="col"><b>Examen</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="materia">FORMULACION DE PROYECTOS DE SOFTWARE</td>
 
-                            <td>9.8</td>
+                                <td>9.8</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">PROGRAMACION PARA WEB</td>
+                            <tr>
+                                <td class="materia">PROGRAMACION PARA WEB</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SISTEMAS EMBEBIDOS</td>
+                            <tr>
+                                <td class="materia">SISTEMAS EMBEBIDOS</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">PROBABILIDAD DISCRETA Y ANALISIS E.</td>
+                            <tr>
+                                <td class="materia">PROBABILIDAD DISCRETA Y ANALISIS E.</td>
 
-                            <td>8.6</td>
+                                <td>8.6</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">TECNOLOGIAS DE REDES EMERGENTES</td>
+                            <tr>
+                                <td class="materia">TECNOLOGIAS DE REDES EMERGENTES</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INGLES IV</td>
+                            <tr>
+                                <td class="materia">INGLES IV</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ELECTIVA IV</td>
+                            <tr>
+                                <td class="materia">ELECTIVA IV</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL UNIVERSITARIO IV</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL UNIVERSITARIO IV</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">OPTATIVA I</td>
+                            <tr>
+                                <td class="materia">OPTATIVA I</td>
 
-                            <td>9.8</td>
+                                <td>9.8</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                    </tbody>
-                    <tfoot>
-                        <tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
 
-                            <td colspan="3">
-                                <b>Promedio: 9.74</b>
-                            </td>
+                                <td colspan="3">
+                                    <b>Promedio: 9.74</b>
+                                </td>
 
-                        </tr>
-                    </tfoot>
-                </table>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <h2>Semestre 5</h2>
-                <table class="mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="materia materia65"><b>Materia</b></th>
-                            <th scope="col" class="calif10"><b>Calif.</b></th>
-                            <th scope="col"><b>Examen</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="materia">DIRECCION DE PROYECTOS DE SOFTWARE</td>
+                <div class="table-cont">
+                    <table class="mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="materia materia65"><b>Materia</b></th>
+                                <th scope="col" class="calif10"><b>Calif.</b></th>
+                                <th scope="col"><b>Examen</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="materia">DIRECCION DE PROYECTOS DE SOFTWARE</td>
 
-                            <td>9</td>
+                                <td>9</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INV. DE OPERACIONES Y SIMULACION</td>
+                            <tr>
+                                <td class="materia">INV. DE OPERACIONES Y SIMULACION</td>
 
-                            <td>9.7</td>
+                                <td>9.7</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">GESTION DE LAS TEC. DE LA INFORMACION</td>
+                            <tr>
+                                <td class="materia">GESTION DE LAS TEC. DE LA INFORMACION</td>
 
-                            <td>9.5</td>
+                                <td>9.5</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INTERACCION HUMANO-COMPUTADORA</td>
+                            <tr>
+                                <td class="materia">INTERACCION HUMANO-COMPUTADORA</td>
 
-                            <td>9.3</td>
+                                <td>9.3</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">PROGRAMACION DE MOVILES</td>
+                            <tr>
+                                <td class="materia">PROGRAMACION DE MOVILES</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INGLES V</td>
+                            <tr>
+                                <td class="materia">INGLES V</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ELECTIVA V</td>
+                            <tr>
+                                <td class="materia">ELECTIVA V</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL UNIVERSITARIO V</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL UNIVERSITARIO V</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">OPTATIVA II</td>
+                            <tr>
+                                <td class="materia">OPTATIVA II</td>
 
-                            <td>9.6</td>
+                                <td>9.6</td>
 
-                            <td>Ordinario</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
+                                <td>Ordinario</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
 
-                            <td colspan="3"><b>Promedio:
-                                    9.59</b></td>
+                                <td colspan="3"><b>Promedio:
+                                        9.59</b></td>
 
-                        </tr>
-                    </tfoot>
-                </table>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <h2>Semestre 6</h2>
-                <table class="mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="materia materia65"><b>Materia</b></th>
-                            <th scope="col" class="calif10"><b>Calif.</b></th>
-                            <th scope="col"><b>Examen</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="materia">DISEÑO Y EVALUACION DE INTERFACES DE U.</td>
+                <div class="table-cont">
+                    <table class="mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="materia materia65"><b>Materia</b></th>
+                                <th scope="col" class="calif10"><b>Calif.</b></th>
+                                <th scope="col"><b>Examen</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="materia">DISEÑO Y EVALUACION DE INTERFACES DE U.</td>
 
-                            <td>9.7</td>
+                                <td>9.7</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">CONTROL DE CALIDAD DE SOFTWARE</td>
+                            <tr>
+                                <td class="materia">CONTROL DE CALIDAD DE SOFTWARE</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">PROYECTO DE INNOVACION</td>
+                            <tr>
+                                <td class="materia">PROYECTO DE INNOVACION</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">DESARROLLO DE SOFTWARE SEGURO</td>
+                            <tr>
+                                <td class="materia">DESARROLLO DE SOFTWARE SEGURO</td>
 
-                            <td>9.6</td>
+                                <td>9.6</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">INGLES VI</td>
+                            <tr>
+                                <td class="materia">INGLES VI</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ELECTIVA VI</td>
+                            <tr>
+                                <td class="materia">ELECTIVA VI</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL UNIVERSITARIO VI</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL UNIVERSITARIO VI</td>
 
-                            <td>AC</td>
+                                <td>AC</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">OPTATIVA III</td>
+                            <tr>
+                                <td class="materia">OPTATIVA III</td>
 
-                            <td>9</td>
+                                <td>9</td>
 
-                            <td>Ordinario</td>
-                        </tr>
+                                <td>Ordinario</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">OPTATIVA IV</td>
+                            <tr>
+                                <td class="materia">OPTATIVA IV</td>
 
-                            <td>10</td>
+                                <td>10</td>
 
-                            <td>Ordinario</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
+                                <td>Ordinario</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
 
-                            <td colspan="3"><b>Promedio:
-                                    9.76</b></td>
+                                <td colspan="3"><b>Promedio:
+                                        9.76</b></td>
 
-                        </tr>
-                    </tfoot>
-                </table>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
                 <h2>Semestre 7</h2>
-                <table class="mb-4">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="materia materia65"><b>Materia</b></th>
-                            <th scope="col" class="calif10"><b></b></th>
-                            <th scope="col"><b>Examen</b></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="materia">METODOLOGIA DE LA INVESTIGACION</td>
+                <div class="table-cont">
+                    <table class="mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="materia materia65"><b>Materia</b></th>
+                                <th scope="col" class="calif10"><b></b></th>
+                                <th scope="col"><b>Examen</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="materia">METODOLOGIA DE LA INVESTIGACION</td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td>Ordinario-Pendiente</td>
-                        </tr>
+                                <td>Ordinario-Pendiente</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">ELECTIVA VII</td>
+                            <tr>
+                                <td class="materia">ELECTIVA VII</td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td>Ordinario-Pendiente</td>
-                        </tr>
+                                <td>Ordinario-Pendiente</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL UNIVERSITARIO VII</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL UNIVERSITARIO VII</td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td>Ordinario-Pendiente</td>
-                        </tr>
+                                <td>Ordinario-Pendiente</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">OPTATIVA V</td>
+                            <tr>
+                                <td class="materia">OPTATIVA V</td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td>Ordinario-Pendiente</td>
-                        </tr>
+                                <td>Ordinario-Pendiente</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">OPTATIVA VI</td>
+                            <tr>
+                                <td class="materia">OPTATIVA VI</td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td>Ordinario-Pendiente</td>
-                        </tr>
+                                <td>Ordinario-Pendiente</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">OPTATIVA VII</td>
+                            <tr>
+                                <td class="materia">OPTATIVA VII</td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td>Ordinario-Pendiente</td>
-                        </tr>
+                                <td>Ordinario-Pendiente</td>
+                            </tr>
 
-                        <tr>
-                            <td class="materia">SERVICIO SOCIAL CONSTITUCIONAL</td>
+                            <tr>
+                                <td class="materia">SERVICIO SOCIAL CONSTITUCIONAL</td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td>Ordinario-Pendiente</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td align="Right"><b>Total de materias: 42</b></td>
+                                <td>Ordinario-Pendiente</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td align="Right"><b>Total de materias: 42</b></td>
 
-                            <td colspan="2"><b>Promedio total: 9.64</b></td>
-                        </tr>
-                    </tfoot>
-                </table>
+                                <td colspan="2"><b>Promedio total: 9.64</b></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </main>
         </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+    </div>
+    <footer>
+        <div class="infoFooter">
+            <ul>
+                <li><b>Dirección:</b> Av. Universidad No. 333, Las Víboras; CP 28040 Colima, Colima, México</li>
+            </ul>
+        </div>
+        <div class="derechosReservados">
+            <p>© Derechos Reservados 2013-2016 Universidad de Colima</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
